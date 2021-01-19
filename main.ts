@@ -1,3 +1,4 @@
+/** Types of variables in Type Script */
 let a:number;                           // Store only number
 let b:string;                           // Store only string
 let c:boolean;                          // Store only boolean
@@ -10,3 +11,18 @@ let h:any[] = [1,"2",true];             // Default initialization in array of ty
 
 enum Color {Red = 0,Green = 1,Blue = 3}
 let backgroundColor = Color.Blue;
+
+/***** Type Assertion *******/
+let word = 'hello world';
+let endsWith = word.endsWith('d');
+
+/**  You need to assert specific type 
+ *   with variable having type "any" 
+ *   in order to showintellisense of it's methods.
+*/
+
+let firstName;
+firstName = 'usman';
+
+let startsWith = (<string>firstName).startsWith('u');
+let nameEnd = (firstName as string).endsWith('n');
