@@ -1,9 +1,9 @@
-class Person {
+class Player {
     firstName:string;
     lastName:string;
-    age:number;
+    score:number;
 
-    calculateAge = (otherPerson:Person) =>{
-        return this.age - otherPerson.age;
+    calculateScore = (otherPlayer:Player) =>{
+        return this.score - otherPlayer.score;
     }
 }
