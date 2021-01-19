@@ -7,3 +7,6 @@ let e:number[] = [1,2,3];               // Default initialization in array of ty
 let f:string[] = ["1","2","3"];         // Default initialization in array of type string
 let g:boolean[] = [true,false,true];    // Default initialization in array of type boolean
 let h:any[] = [1,"2",true];             // Default initialization in array of type any
+
+enum Color {Red = 0,Green = 1,Blue = 3}
+let backgroundColor = Color.Blue;
