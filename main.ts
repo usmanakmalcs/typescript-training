@@ -1,3 +1,5 @@
+import {Player} from './player';
+
 /** Types of variables in Type Script */
 let a:number;                           // Store only number
 let b:string;                           // Store only string
@@ -28,3 +30,8 @@ firstName = 'usman';
 
 let startsWith = (<string>firstName).startsWith('u');
 let nameEnd = (firstName as string).endsWith('n');
+
+// Interacting with Classes and methods
+let player = new Player(20);
+player.score = 10;
+console.log(player.score);
